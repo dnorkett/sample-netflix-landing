@@ -1,8 +1,6 @@
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
-tabItems.forEach(item => item.addEventListener('click', selectItem));
-
 
 selectItem = function(e) {
     removeBorder();
@@ -22,3 +20,5 @@ removeBorder = function() {
 removeShow = function() {
     tabContentItems.forEach(item => item.classList.remove('show'))
 }
+
+tabItems.forEach(item => item.addEventListener('click', selectItem));
